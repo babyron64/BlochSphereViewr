@@ -1,0 +1,64 @@
+.plotArea::after{
+  content:"";
+  display:table;
+  clear:both;
+}
+.bloch {
+    width: 200px;
+    height: auto;
+    float: left;
+}
+.bloch > canvas{
+    width: 200px;
+    height: 200px;
+}
+.bloch > .caption{
+    font-size: 1.5em;
+    margin: 8px;
+    text-align: center;
+}
+
+.console #history{
+    height: 10em;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    overflow: scroll;
+}
+.console .historyLine{
+    position: relative;
+    margin: 0;
+    word-wrap: break-word;
+}
+.console .historyLine .error{
+    color: red;
+    margin: 0;
+}
+.console #input{
+    position: relative;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    height: auto;
+}
+.console .prompt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    padding-left: 0.5em;
+    width: 1em;
+}
+.console .editer{
+    top: 0;
+    left: 1.5em;
+    display: block;
+    padding-left: 1.5em;
+    padding-right: 0.5em;
+    word-wrap: break-word;
+}
+.console .editer:focus{
+    outline: 0px solid transparent;
+}
